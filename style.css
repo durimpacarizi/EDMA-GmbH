@@ -22,10 +22,10 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border-bottom: 2px solid rgb(219, 30, 50);
   width: 100%;
-  padding: 6px;
+  padding: 0.5% 11%;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.81);
   z-index: 999;

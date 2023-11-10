@@ -184,7 +184,6 @@ path {
   padding-bottom: 100px;
   max-width: 1400px;
   margin: auto;
-  font-size: larger;
 }
 .wwdText {
   font-size: larger;
@@ -196,7 +195,6 @@ path {
 }
 .wwdText p {
   text-align: center;
-  font-size: larger;
   color: rgb(141, 138, 134);
 }
 .wwdBoxes {

@@ -43,10 +43,10 @@ body {
   font-size: 17px;
   color: rgb(141, 138, 134);
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 .navbari ul li a:hover {
   color: rgb(219, 30, 50);
-  transition: 0.7s;
 }
 .boxes {
   padding-top: 120px;
@@ -120,7 +120,9 @@ body {
 }
 path:hover {
   fill: rgb(219, 30, 50);
-  transition: 0.2s;
+}
+path {
+  transition: 0.3s ease-in-out;
 }
 
 .icons a {
@@ -131,4 +133,97 @@ path:hover {
 }
 .lowfooter p strong {
   color: rgb(219, 30, 50);
+}
+/* aboutus */
+.aboutUsEdma {
+  margin-top: 100px;
+  font-size: larger;
+  text-align: center;
+}
+.aboutUsEdma h1 {
+  color: rgb(219, 30, 50);
+}
+.aboutUsEdma p {
+  margin-top: 50px;
+  font-size: larger;
+}
+.aboutUsEdma img {
+  margin-top: 35px;
+  width: 650px;
+}
+
+.aboutUsContent {
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: space-evenly;
+  max-width: 1300px;
+  margin: auto;
+}
+.aboutUsSlider {
+  max-width: 600px;
+}
+.aboutUsSlider img {
+  max-width: 600px;
+}
+.aboutUsText {
+  max-width: 500px;
+}
+.aboutUsText h2 {
+  color: rgb(219, 30, 50);
+}
+.aboutUsText p {
+  margin-top: 20px;
+  color: rgb(141, 138, 134);
+}
+
+/* about us what we do */
+
+.aboutUsWhatWeDo {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 1400px;
+  margin: auto;
+  font-size: larger;
+}
+.wwdText {
+  font-size: larger;
+}
+.wwdText h1 {
+  text-align: center;
+  color: rgb(219, 30, 50);
+  margin-top: 20px;
+}
+.wwdText p {
+  text-align: center;
+  font-size: larger;
+  color: rgb(141, 138, 134);
+}
+.wwdBoxes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.wwdBox {
+  max-width: 400px;
+  align-content: center;
+}
+.imgContainer {
+  width: 100%;
+  text-align: center;
+}
+.imgContainer h4 {
+  margin-top: 20px;
+  color: rgb(219, 30, 50);
+}
+.wwdBox p {
+  margin-top: 20px;
+  color: rgb(141, 138, 134);
+}
+.imgContainer img:hover {
+  transform: translateY(-5px);
+  /* transition: 0.7s; */
+}
+.imgContainer img {
+  transition: 0.2s ease-in-out;
 }

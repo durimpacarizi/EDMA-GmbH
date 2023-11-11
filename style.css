@@ -17,17 +17,23 @@ body {
   height: 100vh;
 }
 
-.navbari {
+.nb {
   position: fixed;
   top: 0;
   left: 0;
+  /* margin: auto; */
+  width: 100%;
+  border-bottom: 2px solid rgb(219, 30, 50);
+  background-color: rgba(255, 255, 255, 0.81);
+  z-index: 999;
+}
+.navbari {
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid rgb(219, 30, 50);
-  width: 100%;
+  max-width: 1800px;
   padding: 0.5% 11%;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.81);
   z-index: 999;
 }
 .navbari img {
@@ -108,21 +114,23 @@ body {
 }
 
 .text button:hover {
-  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+  box-shadow: rgba(253, 30, 0, 0.5) 0 3px 8px;
+}
+.lf {
+  width: 100%;
+  border-top: rgb(219, 30, 50) 2px solid;
+  margin-top: 25px;
 }
 .lowfooter {
-  height: 70px;
+  margin-top: 35px;
   margin-bottom: 0;
-  border-top: rgb(219, 30, 50) 2px solid;
+  padding: 20px 0;
+  margin: auto;
   display: flex;
-  justify-content: space-evenly;
-  align-content: center;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
 }
-.lowfooter p {
-  margin-top: 7px;
-}
-
 path:hover {
   fill: rgb(219, 30, 50);
 }
@@ -173,7 +181,6 @@ path {
 }
 .aboutUsText {
   max-width: 500px;
-  font-size: larger;
 }
 .aboutUsText h2 {
   color: rgb(219, 30, 50);
@@ -245,167 +252,40 @@ path {
 }
 .imgContainer p {
   font-size: larger;
-  padding: 2px;
+  padding: 15px;
 }
-
-.pic img {
-  margin-top: 20px;
-  max-width: 15%;
-  height: auto;
-}
-
-.link {
-  margin-top: 40px;
-  margin-bottom: 50px;
-  display: flex;
-  list-style-type: none;
-  justify-content: space-between;
-  align-items: center;
+footer {
+  padding-top: 35px;
   border-top: 2px solid rgb(219, 30, 50);
-}
-
-.links h3 {
-  display: block;
-  font-size: 1.5em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  margin-right: 80px;
-}
-
-.links a {
-  color: rgb(141, 138, 134);
-  text-decoration: none;
-  margin-bottom: 15px;
-  align-items: center;
-  margin-right: 500px;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
-
-.info h3 {
-  margin-top: 40px;
-  display: block;
-  font-size: 1.5em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  margin-right: 80px;
-}
-.info a,
-p {
-  margin-bottom: 15px;
-  flex-direction: column;
-  text-decoration: none;
-  color: rgb(141, 138, 134);
-}
-
-.contact {
-  margin-top: 140px;
-  /* border-top: 2px solid red; */
-  max-width: 1400px;
-}
-
-.contact h1 {
-  color: red;
-  text-transform: uppercase;
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-.contact p {
-  margin-bottom: 10px;
-}
-
-.contact h2 {
-  display: block;
-  font-size: 50px;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: 400;
-}
-
-.login {
-  width: 60%;
-  text-align: left;
-  margin: 50px auto;
-  padding: 20px;
-  box-shadow: 0 0 10px lightcoral;
-  /* max-width: 1200px; */
-}
-
-.allcontact {
-  margin: auto;
-  max-width: 800px;
-}
-
-.login:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adjust the box-shadow on hover as desired */
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
   width: 100%;
-  outline: none;
-  resize: none;
+}
+.upperfooter {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.upperfooter img {
+  height: 60px;
+}
+.upperfooter ul li a {
+  color: rgb(141, 138, 134);
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+.upperfooter ul li p {
+  color: rgb(141, 138, 134);
+  text-decoration: none;
+}
+.upperfooter ul h1 {
+  padding: 20px 0;
+  color: rgb(219, 30, 50);
+}
+
+.upperfooter ul li {
+  list-style-type: none;
   padding: 10px;
-  box-sizing: border-box;
-  border-radius: 4px;
 }
-
-textarea {
-  height: 100px;
-}
-
-input[type="name"]:hover {
-  border: 1px solid black;
-}
-
-input[type="email"]:hover {
-  border: 1px solid black;
-}
-
-input[type="tel"]:hover {
-  border: 1px solid black;
-}
-
-textarea:hover {
-  border: 1px solid black;
-}
-
-button {
-  background-color: rgb(219, 30, 50);
-  padding: 10px 15px;
-  border: 1px solid rgb(219, 30, 50);
-  position: relative;
-  border-radius: 4px;
-  transition: all 0.4s ease-in-out 0s;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: rgb(255, 255, 255);
-}
-
-/* Add some responsive styling */
-@media (max-width: 768px) {
-  .login {
-    width: 80%;
-  }
+.upperfooter ul li a:hover {
+  color: rgb(219, 30, 50);
 }

@@ -92,32 +92,3 @@ const ProjectsListData = {
     },
   ],
 };
-
-const ClientsData = {
-  clients: [
-    {
-      id: 1,
-      CompanyName: "ircon",
-      img: [logo1],
-      url: "http://www.ircon.cz/",
-    },
-    {
-      id: 2,
-      CompanyName: "topolwater",
-      img: [logo2],
-      url: "http://old.topolwater.eu/english/index.html",
-    },
-    {
-      id: 3,
-      CompanyName: "czech republic",
-      img: [logo4],
-      url: "http://www.czechaid.cz/",
-    },
-    {
-      id: 4,
-      CompanyName: "republika e kosoves",
-      img: [logo3],
-      url: "https://ekosova.rks-gov.net/",
-    },
-  ],
-};

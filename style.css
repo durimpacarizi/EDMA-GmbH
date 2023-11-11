@@ -197,16 +197,26 @@ path {
   text-align: center;
   color: rgb(141, 138, 134);
 }
+
 .wwdBoxes {
   display: flex;
   justify-content: space-evenly;
   margin-top: 40px;
 }
+
 .wwdBox {
   max-width: 400px;
   align-content: center;
 }
+
 .imgContainer {
+  width: 100%;
+  text-align: center;
+}
+.imgContainer img {
+  border-radius: 15%;
+}
+.imgContainerIndex {
   width: 100%;
   text-align: center;
 }
@@ -218,10 +228,16 @@ path {
   margin-top: 20px;
   color: rgb(141, 138, 134);
 }
-.imgContainer img:hover {
+
+.imgContainer:hover {
   transform: translateY(-5px);
-  /* transition: 0.7s; */
+  filter: brightness(0.9);
 }
-.imgContainer img {
-  transition: 0.2s ease-in-out;
+
+.imgContainer {
+  transition: 0.3s ease-in-out;
+}
+.imgContainer p {
+  font-size: larger;
+  padding: 15px;
 }

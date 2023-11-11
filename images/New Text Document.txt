@@ -1,9 +1,10 @@
 projects:
-https://www.archdaily.com/1008963/field-house-birdseye?ad_source=search&ad_medium=projects_tab
-https://www.archdaily.com/1008247/gea-house-studio-am11?ad_source=search&ad_medium=projects_tab
-https://www.archdaily.com/1008303/2c-house-baquio-arquitectura?ad_source=search&ad_medium=projects_tab
-https://www.archdaily.com/1008170/house-1710-jle-arquitectos?ad_source=search&ad_medium=projects_tab
-https://www.archdaily.com/1007976/malvern-house-lande-architects?ad_source=search&ad_medium=projects_tab
-https://www.archdaily.com/1006112/dimmick-drive-houses-freelandbuck?ad_source=search&ad_medium=projects_tab
-https://www.archdaily.com/1004950/la-perouse-house-elton-leniz?ad_source=search&ad_medium=projects_tab
-https://www.archdaily.com/1007264/ciasem-house-studiokas?ad_source=search&ad_medium=projects_tab
+Field House: https://www.archdaily.com/1008963/field-house-birdseye?ad_source=search&ad_medium=projects_tab
+House 1710: https://www.archdaily.com/1008170/house-1710-jle-arquitectos?ad_source=search&ad_medium=projects_tab
+Dimmick Drive Houses: https://www.archdaily.com/1006112/dimmick-drive-houses-freelandbuck?ad_source=search&ad_medium=projects_tab
+La Perouse House: https://www.archdaily.com/1004950/la-perouse-house-elton-leniz?ad_source=search&ad_medium=projects_tab
+2C House: https://www.archdaily.com/1008303/2c-house-baquio-arquitectura?ad_source=search&ad_medium=projects_tab
+A-Frame House: https://www.archdaily.com/1008878/a-frame-house-birdseye?ad_source=search&ad_medium=projects_tab
+Piano House: https://www.archdaily.com/799390/piano-house-line-architects?ad_source=search&ad_medium=projects_tab
+Ciasem House: https://www.archdaily.com/1007264/ciasem-house-studiokas?ad_source=search&ad_medium=projects_tab
+Gea House: https://www.archdaily.com/1008247/gea-house-studio-am11?ad_source=search&ad_medium=projects_tab

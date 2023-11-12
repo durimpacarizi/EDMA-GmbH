@@ -249,6 +249,7 @@ path {
 .imgContainer:hover {
   transform: translateY(-5px);
   filter: brightness(0.9);
+  cursor: pointer;
 }
 .imgContainer:hover p {
   color: rgb(219, 30, 50);

@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.projects {
+  margin: 100px auto;
+  font-size: larger;
+  max-width: 1200px;
+}
+
+.projects h1 {
+  color: rgb(219, 30, 50);
+  margin-bottom: 35px;
+}
+.projectBoxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pBox {
+  width: 380px;
+  height: 255px;
+  filter: grayscale(80%);
+  margin: 30px 0;
+  transition: 0.3s ease-in-out;
+}
+.pBox:hover {
+  filter: grayscale(20%);
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+.pBox:hover h4 {
+  filter: grayscale(20%);
+  color: rgb(219, 30, 50);
+}
+.pBox h4 {
+  margin-bottom: 12px;
+  color: rgb(141, 138, 134);
+  font-weight: lighter;
+  transition: 0.3s ease-in-out;
+}
+.pBox img {
+  width: 380px;
+  height: 255px;
+  object-fit: cover;
+  border-radius: 8%;
+}

@@ -48,7 +48,7 @@ body {
   list-style-type: none;
 }
 .navbari ul li a {
-  padding-left: 20px;
+  margin-left: 20px;
   font-family: robota;
   font-size: 17px;
   color: rgb(141, 138, 134);

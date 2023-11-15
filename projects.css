@@ -38,7 +38,7 @@
 .pBox h4 {
   margin-bottom: 12px;
   color: rgb(141, 138, 134);
-  font-weight: lighter;
+  font-weight: normal;
   transition: 0.3s ease-in-out;
 }
 .pBox img {

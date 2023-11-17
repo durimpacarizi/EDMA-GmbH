@@ -232,14 +232,29 @@ path {
   text-align: center;
   filter: grayscale(70%);
 }
+.imgContainerAboutUs {
+  width: 100%;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+.imgContainerAboutUs:hover {
+  transform: translateY(-5px);
+  /* filter: brightness(0.9); */
+  filter: none;
+  cursor: pointer;
+}
 .imgContainer img {
+  border-radius: 15%;
+}
+.imgContainerAboutUs img {
   border-radius: 15%;
 }
 .imgContainerIndex {
   width: 100%;
   text-align: center;
 }
-.imgContainer h4 {
+
+.imgContainerAboutUs h4 {
   margin-top: 20px;
   color: rgb(219, 30, 50);
 }
@@ -288,6 +303,10 @@ footer {
 .upperfooter ul li p {
   color: rgb(141, 138, 134);
   text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+.upperfooter ul li p:hover {
+  cursor: pointer;
 }
 .upperfooter ul h1 {
   padding: 20px 0;

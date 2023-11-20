@@ -90,3 +90,25 @@ const projects = [
     url: "#",
   },
 ];
+
+let container = document.querySelector(".projectBoxes");
+
+projects.forEach((element) => {
+  let div = document.createElement("div");
+  let header = document.createElement("h4");
+  let image = document.createElement("img");
+
+  header.textContent = element.ProjectName;
+  image.src = element.projectImages[0];
+
+  div.appendChild(header);
+  div.appendChild(image);
+
+  div.classList.add("pBox");
+  container.appendChild(div);
+});
+
+window.addEventListener("load", () => {
+  document.querySelector(".loading").style.display = "none";
+  document.querySelector(".content").style.display = "block";
+});

@@ -32,7 +32,8 @@
   transform: translateY(-3px);
 }
 .pBox:hover h4 {
-  filter: grayscale(20%);
+  filter: grayscale(0%);
+  color: rgb(219, 30, 50);
 }
 .pBox h4 {
   margin-bottom: 12px;

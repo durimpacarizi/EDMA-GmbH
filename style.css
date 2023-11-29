@@ -45,6 +45,7 @@ body {
   display: flex;
   list-style-type: none;
 }
+
 .navbari ul li a {
   margin-left: 20px;
   font-size: 17px;
@@ -53,9 +54,15 @@ body {
   transition: 0.3s ease-in-out;
   font-family: "Poppins", sans-serif;
 }
+
+.active {
+  color: rgb(219, 30, 50) !important;
+}
 .navbari ul li a:hover {
   color: rgb(219, 30, 50);
+  cursor: pointer;
 }
+
 .boxes {
   padding-top: 120px;
   display: flex;

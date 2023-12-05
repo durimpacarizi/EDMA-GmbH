@@ -33,7 +33,7 @@ body {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  max-width: 1800px;
+  max-width: 1500px;
   padding: 0.5% 11%;
   align-items: center;
   z-index: 999;
@@ -91,7 +91,7 @@ body {
   filter: brightness(0.85);
   transition: 0.7s;
 }
-.text button {
+.button {
   margin-top: 20px;
   background-color: rgb(219, 30, 50);
   background-image: linear-gradient(-180deg, rgb(219, 30, 50));
@@ -122,7 +122,7 @@ body {
   width: 20%;
 }
 
-.text button:hover {
+.button:hover {
   box-shadow: rgba(253, 30, 0, 0.5) 0 3px 8px;
   color: rgb(219, 30, 50);
   background-color: #fff !important;
@@ -143,15 +143,20 @@ body {
   align-items: center;
   max-width: 1200px;
 }
-path:hover {
-  fill: rgb(219, 30, 50);
-}
+
 path {
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .icons a {
   padding: 0 6px;
+}
+svg {
+  transition: 0.2s ease-in-out;
+}
+.icons a:hover svg {
+  fill: rgb(219, 30, 50);
+  transform: translateY(-3px);
 }
 .icons {
   display: flex;
@@ -182,7 +187,7 @@ path {
   align-items: center;
   /* text-align: center; */
   justify-content: space-evenly;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
 }
 .aboutUsSlider {
@@ -207,7 +212,7 @@ path {
 .aboutUsWhatWeDo {
   padding-top: 100px;
   padding-bottom: 100px;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
 }
 .wwdText {
@@ -330,22 +335,4 @@ footer {
 
 .upperfooter ul li p:hover {
   color: rgb(219, 30, 50);
-}
-
-.login {
-  display: block;
-  margin: 80px;
-}
-
-.login h1 {
-  color: rgb(219, 30, 50);
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.login p {
-  color: rgb(141, 138, 134);
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: larger;
 }

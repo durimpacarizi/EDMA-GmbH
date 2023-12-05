@@ -2,6 +2,7 @@
 
 const navbari = document.querySelector(".navbari");
 
+const a = document.createElement("a");
 const imgg = document.createElement("img");
 
 const linkcontainer = document.createElement("ul");
@@ -23,6 +24,8 @@ a3.href = "./projects.html";
 a4.textContent = "Contact";
 a4.href = "./contact.html";
 
+a.appendChild(imgg);
+
 link1.appendChild(a1);
 link2.appendChild(a2);
 link3.appendChild(a3);
@@ -34,8 +37,9 @@ linkcontainer.appendChild(link3);
 linkcontainer.appendChild(link4);
 
 imgg.src = "./images/logo.png";
+a.href = "./index.html";
 
-navbari.appendChild(imgg);
+navbari.appendChild(a);
 navbari.appendChild(linkcontainer);
 
 const currentPath = window.location.pathname;

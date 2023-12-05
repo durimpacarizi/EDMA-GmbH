@@ -11,25 +11,48 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const email = document.getElementById("adresaEmailit");
 
     if (userName.value === "") {
-      alert("Ju lutem shtoni perdoruesin!");
+      document.getElementById("h1").classList.remove("hide");
       userName.focus();
+      submitBtn.classList.add("nope");
       return false;
     }
+    submitBtn.classList.remove("nope");
+    document.getElementById("h1").classList.add("hide");
+
     if (passWord.value === "") {
-      alert("Ju lutem shtoni passwordin!");
+      document.getElementById("h2").classList.remove("hide");
       passWord.focus();
+      submitBtn.classList.add("nope");
       return false;
     }
+    submitBtn.classList.remove("nope");
+    document.getElementById("h2").classList.add("hide");
+
     if (fullName.value === "") {
-      alert("Ju lutem shtoni emrin tuaj te plote!");
+      document.getElementById("h3").classList.remove("hide");
       fullName.focus();
+      submitBtn.classList.add("nope");
       return false;
     }
+    submitBtn.classList.remove("nope");
+    document.getElementById("h3").classList.add("hide");
+
     if (email.value === "") {
-      alert("Ju lutem shtoni emailin!");
+      document.getElementById("h4").classList.remove("hide");
       email.focus();
+      submitBtn.classList.add("nope");
       return false;
     }
+    submitBtn.classList.remove("nope");
+    document.getElementById("h4").classList.add("hide");
+    if (!(email.value.includes("@") && email.value.includes("."))) {
+      document.getElementById("h5").classList.remove("hide");
+      email.focus();
+      submitBtn.classList.add("nope");
+      return false;
+    }
+    submitBtn.classList.remove("nope");
+    document.getElementById("h5").classList.add("hide");
   };
   submitBtn.addEventListener("click", validate);
 });

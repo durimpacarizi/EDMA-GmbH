@@ -29,6 +29,7 @@ form ul {
 .belowInput {
   text-align: left;
   color: rgb(219, 30, 50);
+  max-width: 400px;
 }
 form ul li {
   color: rgb(141, 138, 134);
@@ -118,4 +119,8 @@ form ul li input:focus {
 }
 .loginContent p {
   text-align: left;
+}
+
+.red {
+  border: 2px solid rgb(219, 30, 50) !important;
 }

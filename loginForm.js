@@ -55,7 +55,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     submitBtn.classList.remove("nope");
     document.getElementById("h3").classList.add("hide");
 
-    if (!(email.value.includes("@") && email.value.includes("."))) {
+    if (
+      (!(email.value.includes("@") && email.value.includes(".")) &&
+        !(email.value.charAt(0) >= "a" && email.value.charAt(0) <= "z")) ||
+      !(email.value.charAt(0) >= "A" && email.value.charAt(0) <= "Z")
+    ) {
       document.getElementById("h4").classList.remove("hide");
       email.focus();
       submitBtn.disabled = true;
@@ -105,7 +109,13 @@ fullName.addEventListener("input", function () {
 });
 
 email.addEventListener("input", function () {
-  if (email.value.includes("@") && email.value.includes(".")) {
+  if (
+    (email.value.includes("@") &&
+      email.value.includes(".") &&
+      email.value.charAt(0) >= "a" &&
+      email.value.charAt(0) <= "z") ||
+    (email.value.charAt(0) >= "A" && email.value.charAt(0) <= "Z")
+  ) {
     document.getElementById("h4").classList.add("hide");
     submitBtn.disabled = false;
     email.classList.remove("red");

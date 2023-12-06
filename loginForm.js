@@ -6,11 +6,18 @@ const fullName = document.getElementById("emri");
 const email = document.getElementById("adresaEmailit");
 const submitBtn = document.getElementById("submit-btn");
 
+let ni = false;
+let dy = false;
+let tre = false;
+let kat = false;
+
+function homePage() {
+  if (ni && dy && tre && kat) window.location.href = "/index.html";
+}
+
 document.addEventListener("DOMContentLoaded", function (event) {
   const validate = (event) => {
     event.preventDefault();
-
-    console.log("submit eshte prekur");
 
     if (userName.value === "") {
       document.getElementById("h1").classList.remove("hide");
@@ -26,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
       !(passWord.value.charAt(0) >= "A" && passWord.value.charAt(0) <= "Z") &&
       !endsWithSpecialCharacter(passWord.value)
     ) {
-      console.log("aaa");
       document.getElementById("h2").classList.remove("hide");
       passWord.focus();
       submitBtn.disabled = true;
@@ -61,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById("h5").classList.add("hide");
   };
   submitBtn.addEventListener("click", validate);
+  submitBtn.addEventListener("click", homePage);
 });
 
 userName.addEventListener("input", function () {
@@ -69,6 +76,7 @@ userName.addEventListener("input", function () {
     submitBtn.disabled = false;
     userName.classList.remove("red");
     submitBtn.classList.remove("nope");
+    ni = true;
   }
 });
 passWord.addEventListener("input", function () {
@@ -82,6 +90,7 @@ passWord.addEventListener("input", function () {
     submitBtn.disabled = false;
     passWord.classList.remove("red");
     submitBtn.classList.remove("nope");
+    dy = true;
   }
 });
 
@@ -91,6 +100,7 @@ fullName.addEventListener("input", function () {
     submitBtn.disabled = false;
     fullName.classList.remove("red");
     submitBtn.classList.remove("nope");
+    tre = true;
   }
 });
 
@@ -100,6 +110,7 @@ email.addEventListener("input", function () {
     submitBtn.disabled = false;
     email.classList.remove("red");
     submitBtn.classList.remove("nope");
+    kat = true;
   }
 });
 

@@ -56,9 +56,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById("h3").classList.add("hide");
 
     if (
-      (!(email.value.includes("@") && email.value.includes(".")) &&
-        !(email.value.charAt(0) >= "a" && email.value.charAt(0) <= "z")) ||
-      !(email.value.charAt(0) >= "A" && email.value.charAt(0) <= "Z")
+      !(email.value.includes("@") && email.value.includes(".")) &&
+      !(
+        email.value.toLowerCase().charAt(0) >= "a" &&
+        email.value.toLowerCase().charAt(0) <= "z"
+      )
     ) {
       document.getElementById("h4").classList.remove("hide");
       email.focus();
@@ -110,11 +112,10 @@ fullName.addEventListener("input", function () {
 
 email.addEventListener("input", function () {
   if (
-    (email.value.includes("@") &&
-      email.value.includes(".") &&
-      email.value.charAt(0) >= "a" &&
-      email.value.charAt(0) <= "z") ||
-    (email.value.charAt(0) >= "A" && email.value.charAt(0) <= "Z")
+    email.value.includes("@") &&
+    email.value.includes(".") &&
+    email.value.toLowerCase().charAt(0) >= "a" &&
+    email.value.toLowerCase().charAt(0) <= "z"
   ) {
     document.getElementById("h4").classList.add("hide");
     submitBtn.disabled = false;

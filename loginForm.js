@@ -4,7 +4,7 @@ const userName = document.getElementById("userid");
 const passWord = document.getElementById("pass");
 const fullName = document.getElementById("emri");
 const email = document.getElementById("adresaEmailit");
-const submitBtn = document.getElementById("submit-btn");
+const submitBtn = document.getElementById("submitBtn");
 
 let ni = false;
 let dy = false;
@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
       submitBtn.classList.add("nope");
       return false;
     }
-
     submitBtn.classList.remove("nope");
     document.getElementById("h2").classList.add("hide");
 
@@ -79,34 +78,40 @@ document.addEventListener("DOMContentLoaded", function (event) {
 userName.addEventListener("input", function () {
   if (userName.value !== "") {
     document.getElementById("h1").classList.add("hide");
-    submitBtn.disabled = false;
     userName.classList.remove("red");
     submitBtn.classList.remove("nope");
     ni = true;
+    submitBtn.disabled = false;
   }
 });
 passWord.addEventListener("input", function () {
   if (
-    passWord.value.length > 8 &&
+    passWord.value.length >= 8 &&
     passWord.value.charAt(0) >= "A" &&
     passWord.value.charAt(0) <= "Z" &&
     endsWithSpecialCharacter(passWord.value)
   ) {
     document.getElementById("h2").classList.add("hide");
-    submitBtn.disabled = false;
     passWord.classList.remove("red");
     submitBtn.classList.remove("nope");
     dy = true;
+    submitBtn.disabled = false;
+  } else {
+    document.getElementById("h2").classList.remove("hide");
+    passWord.classList.add("red");
+    submitBtn.classList.add("nope");
+    dy = false;
+    submitBtn.disabled = true;
   }
 });
 
 fullName.addEventListener("input", function () {
   if (fullName.value.length > 3 && fullName.value.includes(" ")) {
     document.getElementById("h3").classList.add("hide");
-    submitBtn.disabled = false;
     fullName.classList.remove("red");
     submitBtn.classList.remove("nope");
     tre = true;
+    submitBtn.disabled = false;
   }
 });
 
@@ -118,10 +123,10 @@ email.addEventListener("input", function () {
     email.value.toLowerCase().charAt(0) <= "z"
   ) {
     document.getElementById("h4").classList.add("hide");
-    submitBtn.disabled = false;
     email.classList.remove("red");
     submitBtn.classList.remove("nope");
     kat = true;
+    submitBtn.disabled = false;
   }
 });
 

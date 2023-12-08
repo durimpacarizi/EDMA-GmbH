@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+  .nb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid rgb(219, 30, 50);
+    background-color: rgba(255, 255, 255, 0.81);
+    z-index: 999;
+    display: block;
+  }
+  .navbari {
+    margin: auto;
+    text-align: center;
+    z-index: 999;
+    max-width: 300px;
+    display: block;
+  }
+  .navbari img {
+    height: 45px;
+    text-align: center;
+  }
+  .navbari ul {
+    display: block;
+    list-style-type: none;
+    font-size: large;
+    text-align: center;
+  }
+  .navbari ul li a {
+    font-size: x-large;
+  }
+  .navbari ul li {
+    margin-top: 10px;
+  }
+  .wrapper {
+    height: 50vh;
+  }
+
+  .boxes {
+    display: block;
+    max-width: 390px;
+    padding-top: 60px;
+  }
+
+  .boxes img {
+    display: none;
+  }
+
+  .text {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .wwdBoxes {
+    max-width: 390px;
+    display: block;
+    margin-bottom: 0;
+  }
+  .aboutUsWhatWeDo {
+    padding-bottom: 0;
+  }
+
+  footer {
+    padding-top: 0;
+    margin-top: 0px;
+    border-top: none;
+  }
+  .upperfooter {
+    display: none;
+  }
+  .upperfooter img {
+    display: none;
+  }
+
+  .lowfooter {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    padding: 0;
+  }
+  .lowfooter p {
+    grid-row: 2;
+    padding: 0;
+    margin: 0;
+  }
+  .icons {
+    grid-row: 1;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 150px;
+    justify-content: space-between;
+  }
+  .icons a {
+    text-align: center;
+    padding: 0 15px;
+    justify-content: space-between;
+    /* margin: auto; */
+  }
+}

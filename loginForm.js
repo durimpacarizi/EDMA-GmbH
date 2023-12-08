@@ -21,13 +21,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     if (userName.value === "") {
       document.getElementById("h1").classList.remove("hide");
+      userName.focus();
       submitBtn.disabled = true;
       submitBtn.classList.add("nope");
+      ni = false;
       userName.classList.add("red");
-      userName.focus();
       return false;
+    } else {
+      submitBtn.classList.remove("nope");
+      document.getElementById("h1").classList.add("hide");
     }
-
     if (
       passWord.value.length < 8 &&
       !(passWord.value.charAt(0) >= "A" && passWord.value.charAt(0) <= "Z") &&
@@ -36,23 +39,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
       document.getElementById("h2").classList.remove("hide");
       passWord.focus();
       submitBtn.disabled = true;
+      dy = false;
       passWord.classList.add("red");
       submitBtn.classList.add("nope");
       return false;
+    } else {
+      submitBtn.classList.remove("nope");
+      document.getElementById("h2").classList.add("hide");
     }
-    submitBtn.classList.remove("nope");
-    document.getElementById("h2").classList.add("hide");
 
     if (!(fullName.value.length > 3 && fullName.value.includes(" "))) {
       document.getElementById("h3").classList.remove("hide");
       fullName.focus();
       submitBtn.disabled = true;
       fullName.classList.add("red");
+      tre = false;
       submitBtn.classList.add("nope");
       return false;
+    } else {
+      submitBtn.classList.remove("nope");
+      document.getElementById("h3").classList.add("hide");
     }
-    submitBtn.classList.remove("nope");
-    document.getElementById("h3").classList.add("hide");
 
     if (
       !(email.value.includes("@") && email.value.includes(".")) &&
@@ -65,11 +72,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
       email.focus();
       submitBtn.disabled = true;
       email.classList.add("red");
+      kat = false;
       submitBtn.classList.add("nope");
       return false;
+    } else {
+      submitBtn.classList.remove("nope");
+      document.getElementById("h5").classList.add("hide");
     }
-    submitBtn.classList.remove("nope");
-    document.getElementById("h5").classList.add("hide");
   };
   submitBtn.addEventListener("click", validate);
   submitBtn.addEventListener("click", homePage);

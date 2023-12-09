@@ -91,6 +91,12 @@ userName.addEventListener("input", function () {
     submitBtn.classList.remove("nope");
     ni = true;
     submitBtn.disabled = false;
+  } else {
+    ni = false;
+    submitBtn.disabled = true;
+    document.getElementById("h1").classList.remove("hide");
+    userName.classList.add("red");
+    submitBtn.classList.add("nope");
   }
 });
 passWord.addEventListener("input", function () {
@@ -121,6 +127,12 @@ fullName.addEventListener("input", function () {
     submitBtn.classList.remove("nope");
     tre = true;
     submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+    tre = false;
+    fullName.classList.add("red");
+    submitBtn.classList.add("nope");
+    document.getElementById("h3").classList.remove("hide");
   }
 });
 
@@ -136,6 +148,12 @@ email.addEventListener("input", function () {
     submitBtn.classList.remove("nope");
     kat = true;
     submitBtn.disabled = false;
+  } else {
+    document.getElementById("h4").classList.remove("hide");
+    submitBtn.disabled = true;
+    email.classList.add("red");
+    kat = false;
+    submitBtn.classList.add("nope");
   }
 });
 

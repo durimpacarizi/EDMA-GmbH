@@ -56,3 +56,18 @@ navLinks.forEach((link) => {
 if (li) {
   a1.classList.add("active");
 }
+
+function toggleMenu() {
+  let menu = document.querySelector(".navbari ul");
+  menu.classList.toggle("active");
+  let nav = document.querySelector(".navbari");
+  nav.classList.toggle("active");
+  let nb = document.querySelector(".nb");
+  nb.classList.toggle("active");
+  let imgg = document.querySelector(".navbari img");
+  imgg.classList.toggle("hidden");
+  let bars = document.querySelector(".burger-menu");
+  bars.classList.toggle("hidden");
+  let x = document.querySelector(".navbari h1");
+  x.classList.toggle("active");
+}

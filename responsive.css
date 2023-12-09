@@ -1,33 +1,86 @@
-@media (max-width: 932px) {
-  .nb {
-    /* display: none; */
+.burger-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbari ul.active {
+    display: block;
+    margin: 30vh;
+    width: 90%;
+  }
+  .navbari img.hidden {
+    display: none;
+  }
+  .navbari h1 {
+    display: none;
+  }
+  .navbari h1.active {
+    display: block;
     position: absolute;
+    font-size: 35px;
+    top: 10px;
+    right: 25px;
+    opacity: 0.7;
+  }
+
+  .navbari h1.active:hover {
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 45px;
+    height: 6px;
+    background-color: rgb(219, 30, 50);
+    margin: 5px 0;
+    border-radius: 2px;
+    z-index: 999;
+  }
+  .burger-menu.hidden {
+    display: none;
+  }
+  .nb {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     border-bottom: 2px solid rgb(219, 30, 50);
     background-color: rgba(255, 255, 255, 0.81);
-    z-index: 999;
-    flex-direction: column;
     text-align: center;
   }
-  .navbari {
-    margin: auto;
+
+  .navbari.active {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    z-index: 999;
-    max-width: 300px;
-    display: block;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    width: 90%;
+  }
+
+  .nb.active {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .navbari {
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
   .navbari img {
     height: 45px;
     text-align: center;
-    margin: auto;
   }
   .navbari ul {
-    display: block;
+    display: none;
     list-style-type: none;
     font-size: large;
     text-align: center;
@@ -41,7 +94,7 @@
     margin-top: 10px;
   }
   .wrapper {
-    height: 50vh;
+    height: 70vh;
   }
 
   .boxes {
@@ -117,7 +170,7 @@
     /* margin: auto; */
   }
   .aboutUsEdma {
-    margin-top: 300px;
+    margin-top: 90px;
     text-align: center;
   }
   .aboutUsEdma img {
@@ -134,8 +187,7 @@
     text-align: center;
   }
   .login {
-    padding-top: 180px;
-    margin: auto;
+    margin: 0 auto;
     max-width: 80%;
   }
   .loginContent {

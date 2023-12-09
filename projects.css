@@ -16,7 +16,7 @@
 }
 .projectBoxes {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .pBox {
@@ -53,13 +53,13 @@
   color: rgb(219, 30, 50);
 }
 
-@media (max-width: 932px) {
+@media (max-width: 768px) {
   .projectBoxes {
     text-align: center;
     max-width: 100%;
   }
   .projects {
-    margin-top: 280px;
+    margin-top: 90px;
     text-align: center;
     max-width: 90%;
   }
